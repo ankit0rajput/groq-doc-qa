@@ -10,3 +10,4 @@ langchain-chroma
 langchain-groq
 pypdf
 opencv-python-headless
+pdfminer.six
