@@ -13,4 +13,4 @@ opencv-python-headless
 pdfminer.six
 pi-heif
 unstructured
-unstructured[inference]
+unstructured_inference
