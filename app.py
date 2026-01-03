@@ -10,6 +10,7 @@ working_dir = os.path.dirname(os.path.abspath((__file__)))
 
 st.title("🦙 Llama-3.3-70B - Document RAG")
 
+
 # file uploader widget
 uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
 
