@@ -8,7 +8,7 @@ from langchain_chroma import Chroma
 from langchain_groq import ChatGroq
 from langchain_openai import ChatOpenAI
 # from langchain.chains import RetrievalQA
-from langchain.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader
 
 from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import ChatPromptTemplate
