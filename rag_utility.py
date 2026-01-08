@@ -8,6 +8,7 @@ from langchain_chroma import Chroma
 from langchain_groq import ChatGroq
 from langchain_openai import ChatOpenAI
 # from langchain.chains import RetrievalQA
+from langchain.document_loaders import PyPDFLoader
 
 from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import ChatPromptTemplate
@@ -36,10 +37,7 @@ llm = ChatGroq(
 
 def process_document_to_chroma_db(file_name):
     # Load the PDF document using UnstructuredPDFLoader
-    loader = UnstructuredPDFLoader(
-         f"{working_dir}/{file_name}",
-         mode="elements",
-         strategy="fast")
+    loader = PyPDFLoader(f"{working_dir}/{file_name}")
     documents = loader.load()
     # Split the text into chunks for embedding
     text_splitter = RecursiveCharacterTextSplitter(
