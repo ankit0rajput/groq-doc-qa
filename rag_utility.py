@@ -16,7 +16,7 @@ from langchain_core.runnables import RunnablePassthrough
 
 # Load environment variables from .env file
 load_dotenv()
-
+os.environ["OCR_AGENT"] = "tesseract"
 working_dir = os.path.dirname(os.path.abspath((__file__)))
 
 # Load the embedding model
