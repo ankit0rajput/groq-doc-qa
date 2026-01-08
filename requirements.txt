@@ -8,6 +8,7 @@ langchain-text-splitters
 unstructured
 langchain-chroma
 langchain-groq
+langchain-openai
 pypdf
 opencv-python-headless
 pdfminer.six
