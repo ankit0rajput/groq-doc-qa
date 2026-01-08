@@ -23,15 +23,15 @@ working_dir = os.path.dirname(os.path.abspath((__file__)))
 embedding = HuggingFaceEmbeddings()
 
 # Load the Llama-3.3-70B model from Groq
-# llm = ChatGroq(
-#     model="llama-3.3-70b-versatile",
-#     temperature=0
-# )
-
-llm = ChatOpenAI(
-    model="gpt-4o-mini",
-    temperature=0
+llm = ChatGroq(
+     model="llama-3.3-70b-versatile",
+     temperature=0
 )
+
+#llm = ChatOpenAI(
+ #   model="gpt-4o-mini",
+  #  temperature=0
+#)
 
 
 def process_document_to_chroma_db(file_name):
