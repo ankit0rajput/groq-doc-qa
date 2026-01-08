@@ -4,6 +4,8 @@ import streamlit as st
 
 from rag_utility import process_document_to_chroma_db, answer_question
 
+os.environ["OCR_AGENT"] = "tesseract"
+os.environ["UNSTRUCTURED_OCR_AGENT"] = "tesseract"
 
 # set the working directory
 working_dir = os.path.dirname(os.path.abspath((__file__)))
