@@ -3,6 +3,7 @@ streamlit
 sentence-transformers
 langchain-community
 langchain
+protobuf==3.20.3
 langchain-huggingface
 langchain-text-splitters
 unstructured
