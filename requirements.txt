@@ -5,6 +5,7 @@ langchain-community
 langchain
 langchain-huggingface
 langchain-text-splitters
+protobuf==3.20.3
 unstructured
 langchain-chroma
 langchain-groq
